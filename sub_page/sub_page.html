@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디몰 베스트 상품(김나휘)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <link rel="stylesheet" href="./css/sub_page.css">
+    <script src="./js/sub_page.js"></script>
+</head>
+<body>
+
+    <header class="out_header" id="header">
+        <div class="header_banner">
+            <img src="./images/header_banner.jpg" alt="header_banner">
+        </div>
+        <nav class="gnb_box">
+            <ul class="gnb">
+                <li class="login_tab"><a href="#!">로그인</a></li>
+                <li><a href="./join.html">회원가입</a></li>
+                <li><a href="#!">고객센터</a></li>
+            </ul>
+        </nav>
+        <header class="inner_header">
+            <header class="header">
+                <a href="../index.html" class="logo"></a>
+                <nav>
+                    <ul class="lnb">
+                        <li class="lnb1"><a href="#!"><span>전체 카테고리</span></a>
+                            <ul class="brand_lnb">
+                                <li class="lnb_title">브랜드별</li>
+                                <li><a href="#!">가그린</a></li>
+                                <li><a href="#!">검가드</a></li>
+                                <li><a href="#!">더스논</a></li>
+                                <li><a href="#!">모닝케어</a></li>
+                                <li><a href="#!">미니막스</a></li>
+                                <li><a href="#!">박카스</a></li>
+                                <li><a href="#!">비타그란</a></li>
+                                <li><a href="#!">셀파렉스</a></li>
+                                <li><a href="#!">솔리아</a></li>
+                                <li><a href="#!">스킨가드 플러스</a></li>
+                                <li><a href="#!">써큐란</a></li>
+                                <li><a href="#!">아일로</a></li>
+                                <li><a href="#!">오쏘몰</a></li>
+                                <li><a href="#!">조르단</a></li>
+                                <li><a href="#!">지노렉스</a></li>
+                                <li><a href="#!">템포</a></li>
+                                <li><a href="#!">파티온</a></li>
+                                <li><a href="#!">필리더스</a></li>              
+                            </ul>
+                        </li>
+                        <li class="lnb2"><a href="#!"><span>브랜드</span></a>
+                            <ul>
+                                <li class="lnb_title">카테고리별</li>
+                                <li><a href="#!">전체보기</a></li>
+                                <li><a href="#!">건강식품</a></li>
+                                <li><a href="#!">구강케어</a></li>
+                                <li><a href="#!">기타위생용품</a></li>
+                                <li><a href="#!">여성케어</a></li>
+                                <li><a href="#!">키즈용품</a></li>
+                                <li><a href="#!">음료/식품</a></li>
+                                <li><a href="#!">뷰티</a></li>
+                                <li><a href="#!">쇼핑백/굿즈</a></li>
+                            </ul>
+                        </li>
+                        <li class="lnb3"><a href="#!"><span>베스트</span></a>
+                            <ul>
+                                <li class="lnb_title">베스트</li>
+                                <li><a href="#!">판매 랭킹</a></li>
+                                <li><a href="#!">실시간 랭킹</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#!"><span>이벤트/혜택</span></a></li>
+                        <li><a href="#!"><span>건강식품관</span></a></li>
+                        <li class="lnb4"><a href="#!"><span>매거진</span></a><span class="circle"></span>
+                            <ul>
+                                <li class="lnb_title">서비스</li>
+                                <li><a href="#!">이벤트/혜택</a></li>
+                                <li><a href="#!">건강식품관</a></li>
+                                <li><a href="#!">매거진</a></li>
+                                <li><a href="#!">정기배송</a></li>
+                                <li><a href="#!">리뷰</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>  
+                <nav class="icon">
+                    <ul>
+                        <li><a href="#!" class="search"><img src="./images/btn_search.svg" alt="search"></a></li>
+                        <li><a href="#!" class="wishlist"><img src="./images/btn_wishlist.svg" alt="wishlist"></a></li>
+                        <li><a href="#!" class="my"><img src="./images/btn_my.svg" alt="my"></a></li>
+                        <li><a href="#!" class="cart"><img src="./images/btn_basket.svg" alt="cart"></a></li>
+                    </ul>
+                </nav>
+            </header>
+        </header>
+    </header><!--header--> 
+
+    <div class="login_form">
+        <div class="login_box">
+            <div class="login_title">
+                <h2>
+                    안녕하세요.<br />
+                    동아제약 디몰 입니다.
+                </h2>
+            </div>
+            <form action="" name="login">
+                <fieldset>
+                    <label for="user_id">
+                        <input type="text" name="user_id" id="user_id" class="user_id" placeholder="아이디">
+                    </label>
+                    <label for="user_pw">
+                        <input type="password" name="user_pw" id="user_pw" class="user_pw" placeholder="비밀번호">
+                    </label>
+                    <button type="submit" class="log_btn">로그인</button>
+                    <ul class="login_service">
+                        <li><a href="./join.html" target="_blank">회원가입</a></li>
+                        <li><a href="#!">아이디 찾기</a></li>
+                        <li><a href="#!">비밀번호 찾기</a></li>
+                    </ul>
+                </fieldset>       
+            </form>
+            <a href="#!" class="close_btn">
+                <span><i class="fa-solid fa-x"></i></span>
+            </a>
+        </div>
+    </div><!--login_form-->
+
+    <aside>
+        <div class="top_btn">
+            <a href="#!">
+                <img src="./images/TOP.png" alt="top_btn">
+            </a>
+        </div>
+    
+        <nav class="quick">
+            <ul>
+                <li>
+                    <a href="#!">
+                        <span>정기배송</span>
+                        <img src="./images/delivery_icon.png" alt="quick_delivery">          
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <span>무료샘플</span>
+                        <img src="./images/free_sample_icon.png" alt="quick_free_sample">
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <span>회원혜택</span>
+                        <img src="./images/membership_icon.png" alt="quick_membership">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    
+    </aside><!--aside-->
+
+    <div class="main_wrap">
+        <ul class="best_tab">
+            <li class="on">판매 랭킹</li>     
+            <li>실시간 랭킹</li>
+            <span></span>
+        </ul>
+        <div class="best_sheet">
+            <div class="best_sheet01 on_sheet">
+                <ul class="best01_04">
+                    <li>
+                        <a href="#!">
+                            <p class="rank">01</p>
+                            <div class="best_img">
+                                <img src="./images/best01.png" alt="best_img01">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">오쏘몰</p>
+                                <p class="name">이뮨(30일분)+장 솔루션(30일분)+쇼핑백</p>
+                                <p class="price">129,000원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <p class="rank">02</p>
+                            <div class="best_img">
+                                <img src="./images/best02.png" alt="best_img02">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">셀파렉스</p>
+                                <p class="name">에센셜 포 맨(30일분)</p>
+                                <p class="price">38,000원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <p class="rank">03</p>
+                            <div class="best_img">
+                                <img src="./images/best03.png" alt="best_img03">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">써큐란</p>
+                                <p class="name">코큐텐 60캡슐(60일분)+(증정)쇼핑백</p>
+                                <p class="price">40,000원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <p class="rank">04</p>
+                            <div class="best_img">
+                                <img src="./images/best04.png" alt="best_img04">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">셀파렉스</p>
+                                <p class="name">에센셜 포 우먼(30일분)</p>
+                                <p class="price">38,000원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="best05_08">
+                    <li>
+                        <a href="#!">
+                            <p class="rank">05</p>
+                            <div class="best_img">
+                                <img src="./images/best05.png" alt="best_img05">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">오쏘몰</p>
+                                <p class="name">오쏘몰 이뮨*3박스+셀파렉스 장솔루션(30일분)*3개+쇼핑백</p>
+                                <p class="price">387,000원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <p class="rank">06</p>
+                            <div class="best_img">
+                                <img src="./images/best06.png" alt="best_img06">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">셀파렉스</p>
+                                <p class="name">눈 솔루션(30일분)</p>
+                                <p class="price">25,000원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <p class="rank">07</p>
+                            <div class="best_img">
+                                <img src="./images/best07.png" alt="best_img07">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">써큐란</p>
+                                <p class="name">알티지 오메가-3 1200 120캡슐(60일분)+(증정)쇼핑백</p>
+                                <p class="price">60,000원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <p class="rank">08</p>
+                            <div class="best_img">
+                                <img src="./images/best08.png" alt="best_img08">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">셀파렉스</p>
+                                <p class="name">에센셜 포 우먼 50+(30일분)</p>
+                                <p class="price">38,000원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="best09_12">
+                    <li>
+                        <a href="#!">
+                            <p class="rank">09</p>
+                            <div class="best_img">
+                                <img src="./images/best09.png" alt="best_img09">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">미니막스</p>
+                                <p class="name">정글오메가-3 DHA EPA 96캡슐'동상이몽'속 바로 그 제품</p>
+                                <p class="price">43,000원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <p class="rank">10</p>
+                            <div class="best_img">
+                                <img src="./images/best10.png" alt="best_img10">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">써큐란</p>
+                                <p class="name">알파120캡슐(60일분)</p>
+                                <p class="price">40,000원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <p class="rank">11</p>
+                            <div class="best_img">
+                                <img src="./images/best11.png" alt="best_img11">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">셀파렉스</p>
+                                <p class="name">에센셜 포 우먼(30일분)+에센셜 포 맨(30일분)+(증정)쇼핑백</p>
+                                <p class="price">76,000원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <p class="rank">12</p>
+                            <div class="best_img">
+                                <img src="./images/best12.png" alt="best_img12">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">셀파렉스</p>
+                                <p class="name">에센셜 포 맨 50+(30일분)</p>
+                                <p class="price">38,000원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="best13_16">
+                    <li>
+                        <a href="#!">
+                            <p class="rank">13</p>
+                            <div class="best_img">
+                                <img src="./images/best13.png" alt="best_img13">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">박카스</p>
+                                <p class="name">박카스맛 젤리 1박스(50g X 8ea)</p>
+                                <p class="price">9,600원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <p class="rank">14</p>
+                            <div class="best_img">
+                                <img src="./images/best14.png" alt="best_img14">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">템포</p>
+                                <p class="name">패드내추럴순면 중형 16PX1개</p>
+                                <p class="price">6,900원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <p class="rank">15</p>
+                            <div class="best_img">
+                                <img src="./images/best15.png" alt="best_img15">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">미니막스</p>
+                                <p class="name">정글 비타민C 60구미'동상이몽'속 바로 그 제품</p>
+                                <p class="price">35,000원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <p class="rank">16</p>
+                            <div class="best_img">
+                                <img src="./images/best16.png" alt="best_img16">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">더스논</p>
+                                <p class="name">황사방역용 마스크 KF94 대형(25입)(2+2)</p>
+                                <p class="price">9,900원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="best17_20">
+                    <li>
+                        <a href="#!">
+                            <p class="rank">17</p>
+                            <div class="best_img">
+                                <img src="./images/best17.png" alt="best_img17">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">검가드</p>
+                                <p class="name">오리지널 750ml X 4개</p>
+                                <p class="price">46,000원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <p class="rank">18</p>
+                            <div class="best_img">
+                                <img src="./images/best18.png" alt="best_img18">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">모닝케어</p>
+                                <p class="name">HDS & Bullet Shot SET 1개</p>
+                                <p class="price">20,000원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <p class="rank">19</p>
+                            <div class="best_img">
+                                <img src="./images/best19.png" alt="best_img19">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">가그린</p>
+                                <p class="name">어린이 가그린 딸기 380ml</p>
+                                <p class="price">4,800원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <p class="rank">20</p>
+                            <div class="best_img">
+                                <img src="./images/best20.png" alt="best_img20">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">가그린</p>
+                                <p class="name">어린이 가그린 사과 380ml</p>
+                                <p class="price">4,800원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="page_btn">
+                    <a href="#!"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href="#!" class="on_btn">1</a>
+                    <a href="#!"><i class="fa-solid fa-chevron-right"></i></a>   
+                </div>
+                
+            </div>
+            <div class="best_sheet01">
+                <ul class="rank01_04">
+                    <li>
+                        <a href="./detail_page.html">
+                            <p class="rank">01</p>
+                            <div class="best_img">
+                                <img src="./images/rank01.png" alt="rank_img01">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">오쏘몰</p>
+                                <p class="name">이뮨(30일분)+장 솔루션(30일분)+쇼핑백</p>
+                                <p class="price">129,000원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <p class="rank">02</p>
+                            <div class="best_img">
+                                <img src="./images/rank02.png" alt="rank_img02">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">미니막스</p>
+                                <p class="name">★크리스마스 특가 1+1★정글 비타민D 60구미</p>
+                                <p class="price">35,000원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <p class="rank">03</p>
+                            <div class="best_img">
+                                <img src="./images/rank03.png" alt="rank_img03">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">아일로</p>
+                                <p class="name">타입1 콜라겐 비오틴 앰플(28일분) 700ml(25mlX28병)</p>
+                                <p class="price">88,000원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <p class="rank">04</p>
+                            <div class="best_img">
+                                <img src="./images/rank04.png" alt="rank_img04">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">셀파렉스</p>
+                                <p class="name">에센셜 포 우먼(30일분)</p>
+                                <p class="price">38,000원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="rank05_08">
+                    <li>
+                        <a href="#!">
+                            <p class="rank">05</p>
+                            <div class="best_img">
+                                <img src="./images/rank05.png" alt="rank_img05">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">셀파렉스</p>
+                                <p class="name">★재입고★간 솔루션(30일분)</p>
+                                <p class="price">38,000원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <p class="rank">06</p>
+                            <div class="best_img">
+                                <img src="./images/rank06.png" alt="rank_img06">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">검가드</p>
+                                <p class="name">오리지널 750mlX3개</p>
+                                <p class="price">34,500원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <p class="rank">07</p>
+                            <div class="best_img">
+                                <img src="./images/rank07.png" alt="rank_img07">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">써큐란</p>
+                                <p class="name">식물성 알티지오메가-3 +(증정)쇼핑백</p>
+                                <p class="price">50,000원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <p class="rank">08</p>
+                            <div class="best_img">
+                                <img src="./images/rank08.png" alt="rank_img08">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">가그린</p>
+                                <p class="name">제로블라스트 750ml</p>
+                                <p class="price">8,400원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="rank09_10">
+                    <li>
+                        <a href="#!">
+                            <p class="rank">09</p>
+                            <div class="best_img">
+                                <img src="./images/rank09.png" alt="rank_img09">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">조르단</p>
+                                <p class="name">인디비주얼 울트라소프트(1개입)</p>
+                                <p class="price">4,500원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <p class="rank">10</p>
+                            <div class="best_img">
+                                <img src="./images/rank10.png" alt="rank_img10">
+                            </div>
+                            <div class="best_text">
+                                <p class="brand">지노렉스</p>
+                                <p class="name">런칭 키트(페미닌 클린 폼 160ml+클린 티슈(15매)+석고 방향제)</p>
+                                <p class="price">27,000원</p>
+                            </div>
+                            <div class="best_wish">
+                                <img src="./images/btn_wishlist.svg" alt="best_wish">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="page_btn">
+                    <a href="#!"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href="#!" class="on_btn">1</a>
+                    <a href="#!"><i class="fa-solid fa-chevron-right"></i></a>   
+                </div>
+            </div>
+        </div>      
+    </div>
+
+    <footer class="footer">
+        <div class="footer_top">
+            <ul class="shop">
+                <li><a href="#!">회사소개</a></li>
+                <li><a href="#!">이용약관</a></li>
+                <li><a href="#!">개인정보처리방침</a></li>
+                <li><a href="#!">이메일무단수집거부</a></li>
+                <li><a href="#!">제휴 및 대량구매 문의</a></li>
+            </ul>
+            <a href="#!" class="family" id="family">
+                <p>패밀리사이트</p> 
+                <span class="family_btn"><i class="fa-solid fa-plus"></i></span>
+            </a>
+            <div class="family_site">
+                <div class="family_site01">
+                    <ul>
+                        <li>자주회사
+                            <ul>
+                                <li><a href="#!">동아쏘시오홀딩스</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>제약
+                            <ul>
+                                <li><a href="#!">동아제약</a></li>
+                                <li><a href="#!">동아ST</a></li>
+                                <li><a href="#!">에스티팜</a></li>
+                                <li><a href="#!">참메드</a></li>
+                                <li><a href="#!">DMB</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>식음료
+                            <ul>
+                                <li><a href="#!">동아오츠카</a></li>
+                                <li><a href="#!">동천수</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>브랜드
+                            <ul>
+                                <li><a href="#!">박카스</a></li>
+                                <li><a href="#!">비겐</a></li>
+                                <li><a href="#!">파티온</a></li>
+                                <li><a href="#!">국토대장정</a></li>
+                                <li><a href="#!">AD CAFE</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="family_site02">
+                    <ul>
+                        <li>물류
+                            <ul>
+                                <li><a href="#!">용마로지스</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>포장용기
+                            <ul>
+                                <li><a href="#!">수석</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>정보통신
+                            <ul>
+                                <li><a href="#!">DA인포메이션</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div> 
+                <div class="family_site03">
+                    <ul>
+                        <li>건설
+                            <ul>
+                                <li><a href="#!">철근종합건설</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>해외
+                            <ul>
+                                <li><a href="#!">Dong-A America Co.</a></li>
+                                <li><a href="#!">소주동아음료유한공사</a></li>
+                                <li><a href="#!">Dong-A Participacoes Ltda</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="main_footer">
+                <p class="footer_text01">동아제약(주) 서울지점 사업자 정보</p>
+                    <ul class="sns">
+                        <li><a href="#!"><img src="./images/instagram.png" alt="instagram"></a></li>
+                        <li><a href="#!"><img src="./images/facebook.png" alt="facebook"></a></li>
+                        <li><a href="#!"><img src="./images/youtube.png" alt="youtube"></a></li>
+                    </ul>
+                <div class="footer_text02">
+                    <p>사업자등록번호:204-85-26012 | 대표:백상환 <a href="#!">[사업자정보확인]</a></p>
+                    <p>본사:02587 서울특별시 동대문구 천호대로 64(용두동) 동아제약 | 소재지:서울특별시 동대문구 무학로 25길 16(용두동, 동아제약 서울지점)</p>
+                    <p>건강기능식품판매업 신고번호: 제 2017-0042126호 | 통신판매업신고번호: 제2016-서울동대문-0707호</p>
+                    <p>개인정보보호책임자: 정병훈 | e-mail: dmail@donga.co.kr</p>
+                </div>
+                <div class="footer_text03">
+                    <p>KCP 구매안전 서비스</p>
+                    <p>고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한 구매안전(에스크로)서비스를 이용하실 수 있습니다. <br /> <a href="#!">[서비스 가입사실 확인]</a></p>
+                </div>
+                <div class="logo_box">
+                    <img src="./images/icon_ccm_pc.png" alt="ccm_pc">
+                    <img src="./images/bronze_prize.png" alt="bronze_prize">
+                </div>
+            </div>
+        </div>
+    </footer><!--footer-->
+    
+</body>
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디몰 회원가입(김나휘)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/join.css">
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <script src="./js/join.js" defer></script>
+</head>
+<body>
+    <header class="out_header" id="header">
+        <div class="header_banner">
+            <img src="./images/header_banner.jpg" alt="header_banner">
+        </div>
+        <nav class="gnb_box">
+            <ul class="gnb">
+                <li class="login_tab"><a href="#!">로그인</a></li>
+                <li><a href="#!">회원가입</a></li>
+                <li><a href="#!">고객센터</a></li>
+            </ul>
+        </nav>
+        <header class="inner_header">
+            <header class="header">
+                <a href="../index.html" class="logo"></a>
+                <nav>
+                    <ul class="lnb">
+                        <li class="lnb1"><a href="#!"><span>전체 카테고리</span></a>
+                            <ul class="brand_lnb">
+                                <li class="lnb_title">브랜드별</li>
+                                <li><a href="#!">가그린</a></li>
+                                <li><a href="#!">검가드</a></li>
+                                <li><a href="#!">더스논</a></li>
+                                <li><a href="#!">모닝케어</a></li>
+                                <li><a href="#!">미니막스</a></li>
+                                <li><a href="#!">박카스</a></li>
+                                <li><a href="#!">비타그란</a></li>
+                                <li><a href="#!">셀파렉스</a></li>
+                                <li><a href="#!">솔리아</a></li>
+                                <li><a href="#!">스킨가드 플러스</a></li>
+                                <li><a href="#!">써큐란</a></li>
+                                <li><a href="#!">아일로</a></li>
+                                <li><a href="#!">오쏘몰</a></li>
+                                <li><a href="#!">조르단</a></li>
+                                <li><a href="#!">지노렉스</a></li>
+                                <li><a href="#!">템포</a></li>
+                                <li><a href="#!">파티온</a></li>
+                                <li><a href="#!">필리더스</a></li>              
+                            </ul>
+                        </li>
+                        <li class="lnb2"><a href="#!"><span>브랜드</span></a>
+                            <ul>
+                                <li class="lnb_title">카테고리별</li>
+                                <li><a href="#!">전체보기</a></li>
+                                <li><a href="#!">건강식품</a></li>
+                                <li><a href="#!">구강케어</a></li>
+                                <li><a href="#!">기타위생용품</a></li>
+                                <li><a href="#!">여성케어</a></li>
+                                <li><a href="#!">키즈용품</a></li>
+                                <li><a href="#!">음료/식품</a></li>
+                                <li><a href="#!">뷰티</a></li>
+                                <li><a href="#!">쇼핑백/굿즈</a></li>
+                            </ul>
+                        </li>
+                        <li class="lnb3"><a href="#!"><span>베스트</span></a>
+                            <ul>
+                                <li class="lnb_title">베스트</li>
+                                <li><a href="#!">판매 랭킹</a></li>
+                                <li><a href="#!">실시간 랭킹</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#!"><span>이벤트/혜택</span></a></li>
+                        <li><a href="#!"><span>건강식품관</span></a></li>
+                        <li class="lnb4"><a href="#!"><span>매거진</span></a><span class="circle"></span>
+                            <ul>
+                                <li class="lnb_title">서비스</li>
+                                <li><a href="#!">이벤트/혜택</a></li>
+                                <li><a href="#!">건강식품관</a></li>
+                                <li><a href="#!">매거진</a></li>
+                                <li><a href="#!">정기배송</a></li>
+                                <li><a href="#!">리뷰</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>  
+                <nav class="icon">
+                    <ul>
+                        <li><a href="#!" class="search"><img src="./images/btn_search.svg" alt="search"></a></li>
+                        <li><a href="#!" class="wishlist"><img src="./images/btn_wishlist.svg" alt="wishlist"></a></li>
+                        <li><a href="#!" class="my"><img src="./images/btn_my.svg" alt="my"></a></li>
+                        <li><a href="#!" class="cart"><img src="./images/btn_basket.svg" alt="cart"></a></li>
+                    </ul>
+                </nav>
+            </header>
+        </header>
+    </header><!--header-->
+
+    <section class="join_wrap">
+        <nav class="route">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><i class="fa-solid fa-angle-right"></i></li>
+                <li><a href="join.html">회원가입</a></li>       
+            </ul>
+        </nav>
+        <h1>회원가입</h1>
+        <p class="join_title1">
+            <span>가입정보</span>
+            <span>
+                <span style="color: #00A0CA;">*</span><span>은 필수항목입니다.</span> 
+            </span>
+        </p>
+        <form action="" class="join">
+            <fieldset>
+                <table>
+                    <tr>
+                        <td>아이디<span style="color: #00A0CA;">*</span></td>
+                        <td>
+                            <label><input type="text" id="id" name="id" class="id" placeholder="4~16자" autofocus required></label>     
+                            <span class="id_message"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호 <span style="color: #00A0CA;">*</span></td>
+                        <td>
+                            <label><input type="password" id="password1" name="password1" class="password1" placeholder="8~16자" required></label>
+                            <span class="pw1_message"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호 확인 <span style="color: #00A0CA;">*</span></td>
+                        <td>
+                            <label><input type="password" id="password2" name="password2" class="password2" required></label>
+                            <button type="button" id="pw_btn" class="pw_btn">확인</button>
+                            <span class="pw2_message"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>이름 <span style="color: #00A0CA;">*</span></td>
+                        <td>
+                            <label><input type="text" id="user_name" class="user_name" name="user_name" required></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>이메일 <span style="color: #00A0CA;">*</span></td>
+                        <td>
+                            <label><input type="email" id="user_email" name="user_email" class="user_email" required></label>
+                            <span>@</span>
+                            <label>
+                                <select name="email_domain" id="email_domain" class="email_domain">
+                                    <option>naver.com</option>
+                                    <option>daum.net</option>
+                                    <option>nate.com</option>
+                                    <option>google.com</option>
+                                </select>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>일반전화</td>
+                        <td>
+                            <label>
+                                <select name="tel_select" id="tel_select" class="tel_select">
+                                    <option value="tel1">02</option>
+                                    <option value="tel2">031</option>
+                                    <option value="tel3">032</option>
+                                    <option value="tel4">033</option>
+                                    <option value="tel5">041</option>
+                                    <option value="tel6">042</option>
+                                    <option value="tel7">043</option>
+                                    <option value="tel8">044</option>
+                                    <option value="tel9">051</option>
+                                    <option value="tel0">052</option>
+                                    <option value="tel11">053</option>
+                                    <option value="tel12">054</option>
+                                    <option value="tel13">061</option>
+                                    <option value="tel14">062</option>
+                                    <option value="tel15">063</option>
+                                    <option value="tel16">064</option>
+                                </select>
+                            </label> 
+                            <label for="user_tel2">-</label>
+                            <input type="text" id="user_tel2" name="user_tel2" class="user_tel2">
+                            <label for="user_tel3">-</label>
+                            <input type="text" id="user_tel3" name="user_tel3" class="user_tel3">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>휴대전화 <span style="color: #00A0CA;">*</span></td>
+                        <td>
+                            <label>
+                                <select name="cellphone_select" id="cellphone_select" class="cellphone_select" required>
+                                    <option value="cellphone1">010</option>
+                                    <option value="cellphone1">011</option>
+                                    <option value="cellphone1">016</option>
+                                    <option value="cellphone1">017</option>
+                                    <option value="cellphone1">018</option>
+                                    <option value="cellphone1">019</option>
+                                </select>
+                            </label>
+                            <label for="user_cellphone2">-</label>
+                            <input type="text" id="user_cellphone2" name="user_cellphone2" class="user_cellphone2" required>
+                            <label for="user_cellphone3">-</label>
+                            <input type="text" id="user_cellphone3" name="user_cellphone3" class="user_cellphone3" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>주소 <span style="color: #00A0CA;">*</span></td>
+                        <td>
+                            <input type="text" id="address1" class="address1" placeholder="우편번호" required>
+                            <a href="#!" class="address_btn">주소검색</a>
+                            <br/>
+                            <input type="text" class="address2" placeholder="기본 주소" required>
+                            <br/>
+                            <input type="text" class="address3" placeholder="나머지 주소" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>성별 <span style="color: #00A0CA;">*</span></td>
+                        <td>
+                            <input type="radio" id="gender_m" class="gender_m" name="gender" checked>
+                            <label for="gender_m" class="gender">남</label>
+                            <input type="radio" id="gender_w" class="gender_w" name="gender">
+                            <label for="gender_w" class="gender">여</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>생년월일 <span style="color: #00A0CA;">*</span></td>
+                        <td>
+                            <input type="text" class="birth1" id="birth1" name="birth1" placeholder="년도(4자)">
+                            <label for="birth1" class="birth">년</label>
+                            <input type="text" class="birth2" id="birth2" name="birth2">
+                            <label for="birth2" class="birth">월</label>
+                            <input type="text" class="birth3" id="birth3" name="birth3">
+                            <label for="birth3" class="birth">일</label>
+                            <span class="birth_message"></span>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+
+        <form action="" class="terms">
+            <fieldset>
+                <label class="totalterms_text"><input type="checkbox" id="total_terms" class="total_terms" name="total_terms">전체약관에 모두 동의합니다.</label>      
+                <label class="terms1_text">
+                    <input type="checkbox" id="terms1" class="terms_el">[필수] 이용약관 동의
+                    <a href="#!" class="detail_terms">약관보기</a>
+                </label>
+                <label class="terms2_text">
+                    <input type="checkbox" id="terms2" class="terms_el">[필수] 개인정보 수집 및 이용 동의
+                    <a href="#!" class="detail_terms">약관보기</a>
+                </label>
+                <div class="term34_box">
+                    <label class="terms3_text"><input type="checkbox" id="terms3" class="terms_el">SMS</label>
+                    <label class="terms4_text"><input type="checkbox" id="terms4" class="terms_el">e-mail 이메일/DM</label>
+                </div>
+            </fieldset>
+            <button type="submit" id="join_btn" class="join_btn">회원가입</button>
+        </form>
+
+        
+    </section><!--join_form-->
+
+    <div class="login_form">
+        <div class="login_box">
+            <div class="login_title">
+                <h2>
+                    안녕하세요.<br />
+                    동아제약 디몰 입니다.
+                </h2>
+            </div>
+            <form action="" name="login">
+                <fieldset>
+                    <label for="user_id">
+                        <input type="text" name="user_id" id="user_id" class="user_id" placeholder="아이디">
+                    </label>
+                    <label for="user_pw">
+                        <input type="password" name="user_pw" id="user_pw" class="user_pw" placeholder="비밀번호">
+                    </label>
+                    <button type="submit" class="log_btn">로그인</button>
+                    <ul class="login_service">
+                        <li><a href="./join.html" target="_blank">회원가입</a></li>
+                        <li><a href="#!">아이디 찾기</a></li>
+                        <li><a href="#!">비밀번호 찾기</a></li>
+                    </ul>
+                </fieldset>       
+            </form>
+            <a href="#!" class="close_btn">
+                <span><i class="fa-solid fa-x"></i></span>
+            </a>
+        </div>
+    </div><!--login_form-->
+
+    <aside>
+        <div class="top_btn">
+            <a href="#!">
+                <img src="./images/TOP.png" alt="top_btn">
+            </a>
+        </div>
+        <nav class="quick">
+            <ul>
+                <li>
+                    <a href="#!">
+                        <span>정기배송</span>
+                        <img src="./images/delivery_icon.png" alt="quick_delivery">          
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <span>무료샘플</span>
+                        <img src="./images/free_sample_icon.png" alt="quick_free_sample">
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <span>회원혜택</span>
+                        <img src="./images/membership_icon.png" alt="quick_membership">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    
+    </aside><!--aside-->
+
+    <footer class="footer">
+        <div class="footer_top">
+            <ul class="shop">
+                <li><a href="#!">회사소개</a></li>
+                <li><a href="#!">이용약관</a></li>
+                <li><a href="#!">개인정보처리방침</a></li>
+                <li><a href="#!">이메일무단수집거부</a></li>
+                <li><a href="#!">제휴 및 대량구매 문의</a></li>
+            </ul>
+            <a href="#!" class="family" id="family">
+                <p>패밀리사이트</p> 
+                <span class="family_btn"><i class="fa-solid fa-plus"></i></span>
+            </a>
+            <div class="family_site">
+                <div class="family_site01">
+                    <ul>
+                        <li>자주회사
+                            <ul>
+                                <li><a href="#!">동아쏘시오홀딩스</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>제약
+                        <ul>
+                            <li><a href="#!">동아제약</a></li>
+                            <li><a href="#!">동아ST</a></li>
+                            <li><a href="#!">에스티팜</a></li>
+                            <li><a href="#!">참메드</a></li>
+                            <li><a href="#!">DMB</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>식음료
+                        <ul>
+                            <li><a href="#!">동아오츠카</a></li>
+                            <li><a href="#!">동천수</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>브랜드
+                            <ul>
+                                <li><a href="#!">박카스</a></li>
+                                <li><a href="#!">비겐</a></li>
+                                <li><a href="#!">파티온</a></li>
+                                <li><a href="#!">국토대장정</a></li>
+                                <li><a href="#!">AD CAFE</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="family_site02">
+                    <ul>
+                        <li>물류
+                            <ul>
+                                <li><a href="#!">용마로지스</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>포장용기
+                            <ul>
+                                <li><a href="#!">수석</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>정보통신
+                        <ul>
+                            <li><a href="#!">DA인포메이션</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </div> 
+                <div class="family_site03">
+                    <ul>
+                        <li>건설
+                            <ul>
+                                <li><a href="#!">철근종합건설</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>해외
+                            <ul>
+                                <li><a href="#!">Dong-A America Co.</a></li>
+                                <li><a href="#!">소주동아음료유한공사</a></li>
+                                <li><a href="#!">Dong-A Participacoes Ltda</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="main_footer">
+                <p class="footer_text01">동아제약(주) 서울지점 사업자 정보</p>
+                <ul class="sns">
+                    <li><a href="#!"><img src="./images/instagram.png" alt="instagram"></a></li>
+                    <li><a href="#!"><img src="./images/facebook.png" alt="facebook"></a></li>
+                    <li><a href="#!"><img src="./images/youtube.png" alt="youtube"></a></li>
+                </ul>
+                <div class="footer_text02">
+                    <p>사업자등록번호:204-85-26012 | 대표:백상환 <a href="#!">[사업자정보확인]</a></p>
+                    <p>본사:02587 서울특별시 동대문구 천호대로 64(용두동) 동아제약 | 소재지:서울특별시 동대문구 무학로 25길 16(용두동, 동아제약 서울지점)</p>
+                    <p>건강기능식품판매업 신고번호: 제 2017-0042126호 | 통신판매업신고번호: 제2016-서울동대문-0707호</p>
+                    <p>개인정보보호책임자: 정병훈 | e-mail: dmail@donga.co.kr</p>
+                </div>
+                <div class="footer_text03">
+                    <p>KCP 구매안전 서비스</p>
+                    <p>고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한 구매안전(에스크로)서비스를 이용하실 수 있습니다. <br /> <a href="#!">[서비스 가입사실 확인]</a></p>
+                </div>
+                <div class="logo_box">
+                    <img src="./images/icon_ccm_pc.png" alt="ccm_pc">
+                    <img src="./images/bronze_prize.png" alt="bronze_prize">
+                </div>
+            </div>
+        </div>
+    </footer><!--footer-->
+
+    
+</body>
+</html>
